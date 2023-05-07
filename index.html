@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="css/leon.css" />
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&#038;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <style>
+              *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul{
+            list-style: none;
+        }
+        header{
+            display: flex;
+            background-color: #000000;
+            justify-content: space-between;
+            padding: 1rem 0;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+        }
+        .logo img{
+            width: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .header_logo{
+            color: rgb(255, 255, 255);
+            font-weight: 600;
+        }
+        .nav_list{
+            display: flex;
+            align-items: center;
+            color: rgb(255, 255, 255);
+        }
+        .nav_item{
+            margin: 0 8px;
+        }
+        .nav_link{
+            padding: 10px;
+            color: rgb(255, 255, 255); 
+            font-size: 0.9rem;
+            font-weight: 500;
+            border-radius: 5px;
+        }
+        .nav_link:hover{
+            background-color: rgb(64, 151, 122);
+        }
+        .div{
+          margin-top: 10%;
+        }
+        .header__toggle,
+        .header__close{
+            display: none;
+            cursor: pointer;
+        }
+        .edit3{
+          font-size: 39px;
+        }
+        @media screen and (max-width: 866px){
+            header{
+                height: 68px;
+                justify-content: space-between;
+                background-color: #2c2c2c;
+                margin-top: 0;
+            }
+            .logo a{
+                 font-size: 0.9rem;
+                 color: rgb(255, 255, 255);
+            }
+            .logo img{
+                width: 70px;
+            }
+            .header__toggle{
+                display: inline;
+                color: #ffffff;
+                font-size: 24px;
+            }
+            .header__close{
+                position: absolute;
+                right: 24px;
+                display: block;
+                font-size: 24px;
+                border-radius: 50%;
+            }
+            .header__close{
+                background-color: #327961;
+            }
+            .header__close:hover{
+                background-color: #1e4638;
+            }
+            .nav{
+                position: fixed;
+                top: 0;
+                right: -100%;
+                background-color: #000000;
+                color: rgb(255, 255, 255);
+                width: 70%;
+                height: 100vh;
+                padding: 24px 0;
+                z-index: 100;
+                transition: 0.6s;
+                border-radius: 0 0 0 60px;
+            }
+            .nav_list{
+                display: flex;
+                flex-direction: column;
+            }
+            .nav_item{
+                margin: 2rem 0;
+            }
+            .show{
+                right: 0;
+            }
+          .edit1{
+            margin-top: 55%;
+          }
+            .edit{
+    display: block;
+    color: black;              
+
+  }
+  body {
+    font-family: "Work Sans", sans-serif;
+    background: url(img/home-page.jpg);
+    background-size:100% 100vh ;
+    background-repeat: no-repeat;
+   
+  }
+        }
+        @media screen and (max-width: 861px){
+          .edit1{
+            margin-top: 30%;
+          }
+}
+        @media screen and (max-width: 618px){
+          .edit1{
+            margin-top: 45%;
+          }
+}
+        @media screen and (max-width: 393px){
+          .edit1{
+            margin-top: 57%;
+          }
+          .edit{
+            font-size: 35px;
+
+          }
+}
+
+    </style>
+  </head>
+  <body>
+    <!-- Start Header -->
+
+
+          <header   style="position: fixed; width: 100%; padding: 10px; margin: 0; top: 0;">
+            <div class="logo">
+                <img  src="img/logo.png" alt="">
+                <a href="" style="width: 100px;" class="header_logo">Ahmed Osama</a>
+            </div>
+            <nav class="nav" id="nav-menu">
+                <ion-icon name="close-outline" id="colse-menu" class="header__close"></ion-icon>
+    
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="" class="nav_link">Home</a></li>
+                    <li class="nav_item"><a href="Ahmed_Osama_Ahmed_-_Programmer (1).pdf" class="nav_link">CV</a></li>
+                    <li class="nav_item"><a href="#services" class="nav_link">services</a></li>
+                    <li class="nav_item"><a href="#portfolio" class="nav_link">portfolio</a></li>
+                    <li class="nav_item"><a href="#about" class="nav_link">about</a></li>
+                    <li class="nav_item"><a href="#contact" class="nav_link">contact</a></li>
+                </ul>
+            </nav>
+            <ion-icon name="menu-outline" id="toggel-menu" class="header__toggle"></ion-icon>
+    
+        </header>
+
+    <!-- End Header -->
+    <!-- Start Landing Section --><br>
+    <br><br><br><br><br><br>
+<center>
+  <div class="div"   style=" justify-content: center;  height: 70vh;">
+<h1 style="color: #000000; font-size: 53px;  " class="edit edit1" >Welcome </h1>
+<h2 style="font-size: 30px;" class="edit">  Iam Ahmed osama</h2>
+<h1 style="color: #000000; " class="edit edit3" >  That Is My Portfolio </h1>
+
+</div>
+</center>
+    <!-- End Landing Section -->
+    <!-- Start Features -->
+<center>
+  <div  id="services" class="features">
+    <h2 style="color: #363636a9; display: inline-block;" class="special-heading" >Services</h2>
+    <div class="container">
+      <div class="feat">
+<img src="img/chat.jpeg" style="width: 80px; height: 60px; " alt="">         <h3>Speed in response</h3>
+        <p>My speed is the most important thing so I will answer anyone in 5 minutes</p>
+      </div>
+      <div class="feat">
+        <img  style="width: 80px; height: 60px;" src="img/atkan.jpeg" alt="">
+        <h3>Workmanship at work</h3>
+        <p>I do the work to the fullest and in the best way</p>
+      </div>
+      <div class="feat">
+        <img  style="width: 60px; height: 50px;" src="img/time.jpeg" alt="">
+        <h3>Get the work done in the shortest time</h3>
+        <p>My goal and motto is to accomplish the work in the shortest time</p>
+      </div>
+  </div>
+  </div>
+</center>
+    <!-- End Features -->
+
+    <!-- End Services -->
+    <!-- Start Portfolio -->
+    <div style="margin-top: 20px;"  id="portfolio"></div>
+    <div class="portfolio">
+      <div class="container">
+        <h2 style="color: #363636a9;" class="special-heading">Portfolio</h2>
+        <p>If you do it right, it will last forever.</p>
+        <div class="portfolio-content">
+          <!-- 1 -->
+          <div class="card">
+            <div class="info">
+              <center><h3 style="padding: 2px; text-shadow: 1px 1px 1px; color: #6e6d6d;"> Mounjz</h3></center>
+              <h3><img src="img/web1.png" alt=""></h3>
+              <center>
+                <p><a style="width: 170px; color: black; background-color: #ddd; padding: 6px;" href="">preview</a></p>
+              </center>                </div>
+          </div>
+          <!-- 2 -->
+          <div class="card">
+            <div class="info">
+              <center><h3 style="padding: 2px; text-shadow: 1px 1px 1px; color: #6e6d6d;">Creative Conect</h3></center>
+              <h3><img src="img/web2.png" alt=""></h3>
+              <center>
+                <p><a style="width: 170px; color: black; background-color: #ddd; padding: 6px;" href="">preview</a></p>
+              </center>                </div>
+          </div>
+          <!-- 3 -->
+          <div class="card">
+            <div class="info">
+              <center><h3 style="padding: 2px; text-shadow: 1px 1px 1px; color: #6e6d6d;"> Mounjz</h3></center>
+              <h3><img src="img/web1.png" alt=""></h3>
+              <center>
+                <p><a style="width: 170px; color: black; background-color: #ddd; padding: 6px;" href="">preview</a></p>
+              </center>                </div>
+          </div>
+          <!-- 4 -->
+          <div class="card">
+            <div class="info">
+              <center><h3 style="padding: 2px; text-shadow: 1px 1px 1px; color: #6e6d6d;">Creative Conect</h3></center>
+              <h3><img src="img/web2.png" alt=""></h3>
+              <center>
+                <p><a style="width: 170px; color: black; background-color: #ddd; padding: 6px;" href="">preview</a></p>
+              </center>                </div>
+          </div>
+          <!-- 5 -->
+          <div class="card">
+            <div class="info">
+              <center><h3 style="padding: 2px; text-shadow: 1px 1px 1px; color: #6e6d6d;"> Mounjz</h3></center>
+              <h3><img src="img/web1.png" alt=""></h3>
+              <center>
+                <p><a style="width: 170px; color: black; background-color: #ddd; padding: 6px;" href="">preview</a></p>
+              </center>                </div>
+          </div>
+          <!-- 6 -->
+          <div class="card">
+            <div class="info">
+              <center><h3 style="padding: 2px; text-shadow: 1px 1px 1px; color: #6e6d6d;">Creative Conect</h3></center>
+              <h3><img src="img/web2.png" alt=""></h3>
+              <center>
+                <p><a style="width: 170px; color: black; background-color: #ddd; padding: 6px;" href="">preview</a></p>
+              </center>                </div>
+          </div>
+          <!-- 7 -->
+          <div class="card">
+            <div class="info">
+              <center><h3 style="padding: 2px; text-shadow: 1px 1px 1px; color: #6e6d6d;">Creative Conect</h3></center>
+              <h3><img src="img/web2.png" alt=""></h3>
+              <center>
+                <p><a style="width: 170px; color: black; background-color: #ddd; padding: 6px;" href="">preview</a></p>
+              </center>                </div>
+          </div>
+          <!-- 8 -->
+          <div class="card">
+            <div class="info">
+              <center><h3 style="padding: 2px; text-shadow: 1px 1px 1px; color: #6e6d6d;"> Mounjz</h3></center>
+              <h3><img src="img/web1.png" alt=""></h3>
+              <center>
+                <p><a style="width: 170px; color: black; background-color: #ddd; padding: 6px;" href="">preview</a></p>
+              </center>                </div>
+          </div>
+          <!-- 9 -->
+          <div class="card">
+            <div class="info">
+              <center><h3 style="padding: 2px; text-shadow: 1px 1px 1px; color: #6e6d6d;">Creative Conect</h3></center>
+              <h3><img src="img/web2.png" alt=""></h3>
+              <center>
+                <p><a style="width: 170px; color: black; background-color: #ddd; padding: 6px;" href="">preview</a></p>
+              </center>                </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+    <!-- End Portfolio -->
+    <!-- Start About -->
+    <div id="about" class="about">
+      <div class="container">
+        <h2 style="color: #363636a9;" class="special-heading">About</h2>
+        <p>Less is more work</p>
+        <div class="about-content" style="background-color: #ddd; padding: 10%; margin-top: 16px;">
+<div class="row">
+  <div class="col"><h3 style="color:#424242;">Iam Ahmed Osama . Iam a front-end . I can clean code and pixel perfact design .
+
+</h3><h3 style="color:#424242;">    I also make the website more interactive with animation</h3></div>
+</div>
+        </div>
+      </div>
+    </div>
+    <!-- End About -->
+    <!-- Start Contact -->
+    <div id="contact" class="contact">
+      <div class="container">
+        <h2 style="color: #363636a9;" class="special-heading">Contact</h2>
+        <p>We are born to create</p>
+        <div style="width: 100%;" class="info">
+          <p  class="label">Feel free to drop us a line at:</p>
+          <a href="ahmedalzero12345@gmail.com" class="link" style="font-size: 17px;">ahmedalzero12345@gmail.com</a>
+          <p  class="label">Links</p>
+<a href=""><img src="img/bxl-facebook-circle.png" style="width: 30px;" alt=""></a>
+<a href=""><img src="img/bxl-instagram-alt.png" style="width: 30px;" alt=""></a>
+<a href=""><img src="img/bxl-twitter.png" style="width: 30px;" alt=""></a>
+        </div>
+      </div>
+    </div>
+    <!-- End Contact -->
+    <!-- Start Footer -->
+    <div class="footer">&copy; 2023 <span>Ahmed Osama</span> All Right Reserved</div>
+    <!-- End Footer -->
+    <script src="nav.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
